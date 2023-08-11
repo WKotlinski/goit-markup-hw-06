@@ -1,1 +1,3 @@
-# goit-markup-hw-06
+# goit-markup-hw-05
+
+https://wkotlinski.github.io/goit-markup-hw-06/
