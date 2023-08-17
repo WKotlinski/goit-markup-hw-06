@@ -1,5 +1,6 @@
 :root {
   --navy-blue: hsl(237, 18%, 22%);
+  --navy-blue-opacity: hsla(237, 18%, 22%, 0.4);
   --iris: hsl(235, 75%, 60%);
   --slate: hsl(237, 12%, 30%);
   --cloud: #f4f4fd;
@@ -89,7 +90,6 @@ img {
   pointer-events: none;
   visibility: hidden;
 }
-/* Strefa eksperymentalna-Start */
 
 .modal {
   position: fixed;
@@ -109,13 +109,31 @@ img {
   box-shadow: 0px 2px 1px 0px hsla(0, 0%, 0%, 0.2),
     0px 1px 3px 0px hsla(0, 0%, 0%, 0.12), 0px 1px 1px 0px hsla(0, 0%, 0%, 0.14);
   transition: transform var(--cubic);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.modal-button {
+.modal-close-button {
   position: absolute;
-  right: 24px;
-  top: 24px;
-  background-color: var(--dairy);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inset-inline-end: 24px;
+  inset-block-start: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px hsla(0, 0%, 0%, 0.1) solid;
+}
+.modal-close-button:hover {
+  background-color: var(--iris);
+}
+.modal-close-button:hover .close-button-svg {
+  fill: white;
+}
+.close-button-svg:hover {
+  fill: var(--navy-blue);
 }
 
 .is-hidden .modal-body {
@@ -125,7 +143,85 @@ img {
 .modal:not(.is-hidden) .modal-body {
   transform: translateY(0%);
 }
-/* Strefa eksperymentalna-Koniec  */
+
+.modal-heading {
+  position: absolute;
+  inset-block-start: 72px;
+  inset-inline: 24px;
+  margin-bottom: 20px;
+  /* outline: var(--outline-1); */
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--navy-blue);
+}
+
+/* Sekcja formularza-Start */
+.modal-form {
+  display: flex;
+  margin-top: 112px;
+  flex-direction: column;
+  gap: 4px;
+  padding: 24px;
+}
+.modal-form input {
+  display: block;
+  margin-block-end: 8px;
+}
+.modal-form label {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: var(--light-slate);
+}
+.modal-form input,
+.modal-form textarea {
+  border: var(--navy-blue-opacity) 1px solid;
+  border-radius: 4px;
+  padding-inline-start: 16px;
+  padding-block: 8px;
+}
+.modal-form input:hover,
+.modal-form textarea:hover,
+.modal-form input:focus,
+.modal-form textarea:focus {
+  border: 1px var(--iris) solid;
+  fill: var(--iris);
+  transition: var(--cubic);
+}
+.privacy-box {
+  display: flex;
+  gap: 8px;
+  margin-block-start: 16px;
+  /* margin-block-end: 24px; */
+  /* outline: var(--outline-2); */
+}
+
+.modal-button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: white;
+  background-color: var(--iris);
+  width: 169px;
+  margin: 0 auto;
+  padding: 16px 32px;
+  margin-bottom: 24px;
+  /* outline: var(--outline-1); */
+}
+.modal-button:hover {
+  background-color: var(--ocean);
+  transition: var(--cubic);
+}
+/* Sekcja formularza-End */
+
 .highlight {
   color: var(--iris);
 }
@@ -192,7 +288,7 @@ nav ul {
 
 .after-class::after {
   position: relative;
-  bottom: -22.6px;
+  inset-block-end: -22.6px;
   content: "";
   display: block;
   width: 100%;
@@ -284,7 +380,6 @@ nav a:focus,
   padding: 188px 0;
   text-align: center;
 }
-
 .hero-section h1 {
   color: #ffffff;
   font-size: 56px;
@@ -552,6 +647,54 @@ footer .social-media-icon-svg {
   width: 24px;
   height: 24px;
 }
+/* Sekcja subskrybcji */
+.subscription-box {
+  margin-left: 80px;
+  /* outline: var(--outline-2); */
+}
+.sub-box {
+  margin-top: 16px;
+  display: flex;
+  gap: 24px;
+}
+.sub-box input {
+  width: 264px;
+  height: 40px;
+  padding: 8px 16px;
+  color: white;
+  background-color: var(--navy-blue);
+  border: 1px white solid;
+  border-radius: 4px;
+}
+.sub-mail-p {
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+  color: white;
+  /* outline: var(--outline-1); */
+}
+.sub-button {
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  width: 165px;
+  height: 40px;
+  padding: 8px 24px;
+  display: flex;
+  justify-content: baseline;
+  color: white;
+  fill: currentColor;
+  background-color: var(--iris);
+
+  /* outline: var(--outline-1); */
+}
+.sub-text {
+  margin-right: 16px;
+}
+
+/* Sekcja portfolio */
 .filter-list-item button:hover,
 .filter-list-item button:focus {
   color: white;

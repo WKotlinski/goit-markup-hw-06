@@ -52,40 +52,67 @@
     <main>
       <div class="modal is-hidden" data-modal>
         <div class="modal-body">
-          <button class="modal-button" data-modal-close>
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="12" cy="12" r="12" fill="#E7E9FC" />
-              <circle
-                cx="12"
-                cy="12"
-                r="11.5"
-                stroke="black"
-                stroke-opacity="0.1"
-              />
-              <g clip-path="url(#clip0_297024_948)">
-                <path
-                  d="M16 8.80571L15.1943 8L12 11.1943L8.80571 8L8 8.80571L11.1943 12L8 15.1943L8.80571 16L12 12.8057L15.1943 16L16 15.1943L12.8057 12L16 8.80571Z"
-                  fill="#2E2F42"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_297024_948">
-                  <rect
-                    width="8"
-                    height="8"
-                    fill="white"
-                    transform="translate(8 8)"
-                  />
-                </clipPath>
-              </defs>
+          <button class="modal-close-button" data-modal-close>
+            <svg width="8" height="8" viewBox="0 0 8 8">
+              <use
+                class="close-button-svg"
+                href="./images/icons.svg#icon-cross-1"
+              ></use>
             </svg>
           </button>
+          <h2 class="modal-heading">
+            Leave your contacts and we will call you back
+          </h2>
+          <div class="form-box">
+            <form
+              class="modal-form"
+              action="#"
+              name="signe-in"
+              autocomplete="on"
+              novalidate
+            >
+              <label for="signe-in-user-name">Name</label>
+              <input
+                id="signe-in-user-name"
+                name="user-name"
+                type="text"
+                placeholder="John Smith"
+              />
+              <label for="signe-in-phone">Phone</label>
+              <input
+                id="signe-in-phone"
+                name="phone-number"
+                type="text"
+                placeholder="+48 777 777 777"
+              />
+              <label for="signe-in-email">Email</label>
+              <input
+                id="signe-in-email"
+                name="email"
+                type="email"
+                placeholder="example@example.com"
+              />
+              <label for="signe-in-comment-box">Comment</label>
+              <textarea
+                id="signe-in-comment-box"
+                name="Comment-box"
+                wrap="soft"
+                rows="6"
+                placeholder="Text input"
+              ></textarea>
+              <div class="privacy-box">
+                <input
+                  id="privacy-checkbox"
+                  name="privacy-checkbox"
+                  type="checkbox"
+                /><label for="privacy-checkbox"
+                  >I accept the terms and conditions of the
+                  <a href="#" class="privacy-link">Privacy Policy</a></label
+                >
+              </div>
+              <button type="button" class="modal-button">Send</button>
+            </form>
+          </div>
         </div>
       </div>
       <section class="hero-section">
@@ -207,28 +234,28 @@
                   <li>
                     <a href="#">
                       <svg class="social-media-icon-svg">
-                        <use href="./images/icons.svg#icon-instagram-2-1"></use>
+                        <use href="./images/icons.svg#icon-instagram-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#">
                       <svg class="social-media-icon-svg">
-                        <use href="./images/icons.svg#icon-twitter-1-1"></use>
+                        <use href="./images/icons.svg#icon-twitter-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#">
                       <svg class="social-media-icon-svg">
-                        <use href="./images/icons.svg#icon-facebook-1-1"></use>
+                        <use href="./images/icons.svg#icon-facebook-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#">
                       <svg class="social-media-icon-svg">
-                        <use href="./images/icons.svg#icon-linkedin-1-1"></use>
+                        <use href="./images/icons.svg#icon-linkedin-1"></use>
                       </svg>
                     </a>
                   </li>
@@ -249,28 +276,28 @@
                   <li>
                     <a href="#">
                       <svg class="social-media-icon-svg">
-                        <use href="./images/icons.svg#icon-instagram-2-1"></use>
+                        <use href="./images/icons.svg#icon-instagram-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#">
                       <svg class="social-media-icon-svg">
-                        <use href="./images/icons.svg#icon-twitter-1-1"></use>
+                        <use href="./images/icons.svg#icon-twitter-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#">
                       <svg class="social-media-icon-svg">
-                        <use href="./images/icons.svg#icon-facebook-1-1"></use>
+                        <use href="./images/icons.svg#icon-facebook-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#">
                       <svg class="social-media-icon-svg">
-                        <use href="./images/icons.svg#icon-linkedin-1-1"></use>
+                        <use href="./images/icons.svg#icon-linkedin-1"></use>
                       </svg>
                     </a>
                   </li>
@@ -291,28 +318,28 @@
                   <li>
                     <a href="#">
                       <svg class="social-media-icon-svg">
-                        <use href="./images/icons.svg#icon-instagram-2-1"></use>
+                        <use href="./images/icons.svg#icon-instagram-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#">
                       <svg class="social-media-icon-svg">
-                        <use href="./images/icons.svg#icon-twitter-1-1"></use>
+                        <use href="./images/icons.svg#icon-twitter-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#">
                       <svg class="social-media-icon-svg">
-                        <use href="./images/icons.svg#icon-facebook-1-1"></use>
+                        <use href="./images/icons.svg#icon-facebook-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#">
                       <svg class="social-media-icon-svg">
-                        <use href="./images/icons.svg#icon-linkedin-1-1"></use>
+                        <use href="./images/icons.svg#icon-linkedin-1"></use>
                       </svg>
                     </a>
                   </li>
@@ -333,28 +360,28 @@
                   <li>
                     <a href="#">
                       <svg class="social-media-icon-svg">
-                        <use href="./images/icons.svg#icon-instagram-2-1"></use>
+                        <use href="./images/icons.svg#icon-instagram-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#">
                       <svg class="social-media-icon-svg">
-                        <use href="./images/icons.svg#icon-twitter-1-1"></use>
+                        <use href="./images/icons.svg#icon-twitter-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#">
                       <svg class="social-media-icon-svg">
-                        <use href="./images/icons.svg#icon-facebook-1-1"></use>
+                        <use href="./images/icons.svg#icon-facebook-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#">
                       <svg class="social-media-icon-svg">
-                        <use href="./images/icons.svg#icon-linkedin-1-1"></use>
+                        <use href="./images/icons.svg#icon-linkedin-1"></use>
                       </svg>
                     </a>
                   </li>
@@ -368,14 +395,6 @@
         <div class="container">
           <h2>Customers</h2>
           <ul class="customers-list">
-            <li>
-              <a href="#" class="customers-list-link">
-                <div>
-                  <svg class="customers-svg" width="104px" height="56px">
-                    <use href="./images/icons.svg#icon-Logo"></use>
-                  </svg></div
-              ></a>
-            </li>
             <li>
               <a href="#" class="customers-list-link">
                 <div>
@@ -416,6 +435,14 @@
                   </svg></div
               ></a>
             </li>
+            <li>
+              <a href="#" class="customers-list-link">
+                <div>
+                  <svg class="customers-svg" width="104px" height="56px">
+                    <use href="./images/icons.svg#icon-Logo-6"></use>
+                  </svg></div
+              ></a>
+            </li>
           </ul>
         </div>
       </section>
@@ -437,32 +464,49 @@
             <li>
               <a href="#">
                 <svg class="social-media-icon-svg">
-                  <use href="./images/icons.svg#icon-instagram-2-1"></use>
+                  <use href="./images/icons.svg#icon-instagram-1"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#">
                 <svg class="social-media-icon-svg">
-                  <use href="./images/icons.svg#icon-twitter-1-1"></use>
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#">
                 <svg class="social-media-icon-svg">
-                  <use href="./images/icons.svg#icon-facebook-1-1"></use>
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#">
                 <svg class="social-media-icon-svg">
-                  <use href="./images/icons.svg#icon-linkedin-1-1"></use>
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
                 </svg>
               </a>
             </li>
           </ul>
+        </div>
+        <div class="subscription-box">
+          <label for="sub-mail" class="sub-mail-p">Subscribe</label>
+          <form class="sub-box">
+            <input
+              id="sub-mail"
+              name="sub-mail"
+              type="email"
+              placeholder="E-mail"
+            />
+            <button class="sub-button">
+              <span class="sub-text">Subscribe</span>
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-send-1"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
