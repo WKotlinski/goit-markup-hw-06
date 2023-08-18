@@ -63,56 +63,55 @@
           <h2 class="modal-heading">
             Leave your contacts and we will call you back
           </h2>
-          <div class="form-box">
-            <form
-              class="modal-form"
-              action="#"
-              name="signe-in"
-              autocomplete="on"
-              novalidate
-            >
-              <label for="signe-in-user-name">Name</label>
+
+          <form
+            class="modal-form"
+            action="#"
+            name="signe-in"
+            autocomplete="on"
+            novalidate
+          >
+            <label for="signe-in-user-name">Name</label>
+            <input
+              id="signe-in-user-name"
+              name="user-name"
+              type="text"
+              placeholder="John Smith"
+            />
+            <label for="signe-in-phone">Phone</label>
+            <input
+              id="signe-in-phone"
+              name="phone-number"
+              type="text"
+              placeholder="+48 777 777 777"
+            />
+            <label for="signe-in-email">Email</label>
+            <input
+              id="signe-in-email"
+              name="email"
+              type="email"
+              placeholder="example@example.com"
+            />
+            <label for="signe-in-comment-box">Comment</label>
+            <textarea
+              id="signe-in-comment-box"
+              name="Comment-box"
+              wrap="soft"
+              rows="6"
+              placeholder="Text input"
+            ></textarea>
+            <div class="privacy-box">
               <input
-                id="signe-in-user-name"
-                name="user-name"
-                type="text"
-                placeholder="John Smith"
-              />
-              <label for="signe-in-phone">Phone</label>
-              <input
-                id="signe-in-phone"
-                name="phone-number"
-                type="text"
-                placeholder="+48 777 777 777"
-              />
-              <label for="signe-in-email">Email</label>
-              <input
-                id="signe-in-email"
-                name="email"
-                type="email"
-                placeholder="example@example.com"
-              />
-              <label for="signe-in-comment-box">Comment</label>
-              <textarea
-                id="signe-in-comment-box"
-                name="Comment-box"
-                wrap="soft"
-                rows="6"
-                placeholder="Text input"
-              ></textarea>
-              <div class="privacy-box">
-                <input
-                  id="privacy-checkbox"
-                  name="privacy-checkbox"
-                  type="checkbox"
-                /><label for="privacy-checkbox"
-                  >I accept the terms and conditions of the
-                  <a href="#" class="privacy-link">Privacy Policy</a></label
-                >
-              </div>
-              <button type="button" class="modal-button">Send</button>
-            </form>
-          </div>
+                id="privacy-checkbox"
+                name="privacy-checkbox"
+                type="checkbox"
+              /><label for="privacy-checkbox"
+                >I accept the terms and conditions of the
+                <a href="#" class="privacy-link">Privacy Policy</a></label
+              >
+            </div>
+            <button type="button" class="modal-button">Send</button>
+          </form>
         </div>
       </div>
       <section class="hero-section">

@@ -113,12 +113,16 @@ img {
   justify-content: center;
   flex-direction: column;
 }
+.privacy-link {
+  text-decoration: underline;
+}
 
 .modal-close-button {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--cornflower);
   inset-inline-end: 24px;
   inset-block-start: 24px;
   width: 24px;
@@ -145,10 +149,8 @@ img {
 }
 
 .modal-heading {
-  position: absolute;
-  inset-block-start: 72px;
-  inset-inline: 24px;
-  margin-bottom: 20px;
+  margin-block-start: 72px;
+  margin-block-end: 16px;
   /* outline: var(--outline-1); */
 
   font-size: 16px;
@@ -162,10 +164,10 @@ img {
 /* Sekcja formularza-Start */
 .modal-form {
   display: flex;
-  margin-top: 112px;
   flex-direction: column;
   gap: 4px;
-  padding: 24px;
+  padding-inline: 24px;
+  /* outline: var(--outline-2); */
 }
 .modal-form input {
   display: block;
@@ -194,12 +196,11 @@ img {
   fill: var(--iris);
   transition: var(--cubic);
 }
+
 .privacy-box {
   display: flex;
   gap: 8px;
   margin-block-start: 16px;
-  /* margin-block-end: 24px; */
-  /* outline: var(--outline-2); */
 }
 
 .modal-button {
@@ -213,7 +214,7 @@ img {
   width: 169px;
   margin: 0 auto;
   padding: 16px 32px;
-  margin-bottom: 24px;
+  margin-block: 24px;
   /* outline: var(--outline-1); */
 }
 .modal-button:hover {
@@ -665,6 +666,9 @@ footer .social-media-icon-svg {
   background-color: var(--navy-blue);
   border: 1px white solid;
   border-radius: 4px;
+}
+.sub-box ::placeholder {
+  color: white;
 }
 .sub-mail-p {
   font-weight: 500;
