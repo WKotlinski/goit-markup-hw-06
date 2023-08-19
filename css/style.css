@@ -227,19 +227,21 @@ img {
 input[type="checkbox"] {
   appearance: none;
 }
-.fake-checkbox {
-  width: 16px;
+.checkbox-box {
   height: 16px;
+  width: 16px;
   border: 1px var(--light-slate) solid;
   border-radius: 2px;
 }
-.fake-checkbox svg {
-  color: red;
+.fake-checkbox-icon {
+  position: absolute;
+  overflow: hidden;
+  background-color: white;
+  background-image: none;
 }
-input:checked + .fake-checkbox {
-  opacity: 1;
+.modal-checkbox:checked + .checkbox-box {
+  background-image: url(/images/icons.svg#icon-checkbox-check);
 }
-
 .modal-button {
   font-size: 16px;
   font-weight: 500;
