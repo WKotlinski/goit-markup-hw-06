@@ -169,9 +169,8 @@ img {
   padding-inline: 24px;
   /* outline: var(--outline-2); */
 }
-.modal-form input {
-  display: block;
-  margin-block-end: 8px;
+.modal-form input:not([type="checkbox"]) {
+  width: 360px;
 }
 .modal-form label {
   font-size: 12px;
@@ -181,22 +180,45 @@ img {
   text-align: left;
   color: var(--light-slate);
 }
-.modal-form input,
+
 .modal-form textarea {
   border: var(--navy-blue-opacity) 1px solid;
   border-radius: 4px;
   padding-inline-start: 16px;
   padding-block: 8px;
 }
+.modal-form input {
+  border: var(--navy-blue-opacity) 1px solid;
+  border-radius: 4px;
+  padding-inline-start: 30px;
+  padding-block: 8px;
+}
 .modal-form input:hover,
 .modal-form textarea:hover,
 .modal-form input:focus,
 .modal-form textarea:focus {
+  outline: none;
   border: 1px var(--iris) solid;
-  fill: var(--iris);
   transition: var(--cubic);
 }
 
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  translate: 0 -50% 0;
+  fill: var(--navy-blue);
+}
+.input-wrapper:hover .form-icon {
+  fill: var(--iris);
+}
+.input-wrapper:focus-within .form-icon {
+  fill: var(--iris);
+}
 .privacy-box {
   display: flex;
   gap: 8px;
