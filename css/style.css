@@ -202,7 +202,14 @@ img {
   border: 1px var(--iris) solid;
   transition: var(--cubic);
 }
-
+.modal-form textarea::placeholder {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.48px;
+  color: hsla(237, 30%, 26%, 0.4);
+}
 .input-wrapper {
   position: relative;
   width: 100%;
@@ -238,7 +245,7 @@ input[type="checkbox"] {
   margin-right: 8px;
 }
 .checkbox-icon.empty {
-  stroke: var(--light-slate);
+  stroke: hsla(237, 18%, 22%, 0.4);
   stroke-width: 1px;
 }
 
@@ -254,7 +261,11 @@ input[type="checkbox"] {
 .modal-checkbox:checked + .checkbox-label .checkbox-icon.empty {
   display: none;
 }
-
+.privacy-box-text {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.48px;
+}
 .modal-button {
   font-size: 16px;
   font-weight: 500;
