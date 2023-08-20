@@ -152,10 +152,9 @@ img {
 }
 
 .modal-heading {
-  /* margin-block: auto; */
   margin-block-start: 72px;
-  /* margin-block-end: 16px; */
-  outline: var(--outline-1);
+
+  /* outline: var(--outline-1); */
 
   font-size: 16px;
   font-weight: 500;
@@ -169,10 +168,9 @@ img {
 .modal-form {
   display: flex;
   flex-direction: column;
-  /* margin-block-end: auto; */
+
   gap: 4px;
   padding-inline: 24px;
-  outline: var(--outline-2);
 }
 .modal-form input:not([type="checkbox"]) {
   width: 360px;
