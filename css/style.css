@@ -115,6 +115,7 @@ img {
 }
 .privacy-link {
   text-decoration: underline;
+  margin-inline-start: 0.5ex;
 }
 
 .modal-close-button {
@@ -225,23 +226,35 @@ img {
   margin-block-start: 16px;
 }
 input[type="checkbox"] {
-  appearance: none;
+  display: none;
 }
-.checkbox-box {
-  height: 16px;
-  width: 16px;
-  border: 1px var(--light-slate) solid;
-  border-radius: 2px;
+.checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
 }
-.fake-checkbox-icon {
-  position: absolute;
-  overflow: hidden;
-  background-color: white;
-  background-image: none;
+.checkbox-icon {
+  margin-right: 8px;
 }
-.modal-checkbox:checked + .checkbox-box {
-  background-image: url(/images/icons.svg#icon-checkbox-check);
+.checkbox-icon.empty {
+  stroke: var(--light-slate);
+  stroke-width: 1px;
 }
+
+.checkbox-icon.filled {
+  fill: #007bff;
+  display: none;
+}
+
+.modal-checkbox:checked + .checkbox-label .checkbox-icon.filled {
+  display: inline;
+}
+
+.modal-checkbox:checked + .checkbox-label .checkbox-icon.empty {
+  display: none;
+}
+
 .modal-button {
   font-size: 16px;
   font-weight: 500;
